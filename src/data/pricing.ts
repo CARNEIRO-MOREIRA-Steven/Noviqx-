@@ -20,7 +20,7 @@ export const PLANS: readonly Plan[] = [
   {
     id: "essentiel",
     name: "Essentiel",
-    price: "1 599 €",
+    price: "1 790 €",
     target:
       "Pour les indépendants, artisans et petites entreprises qui veulent une présence professionnelle en ligne.",
     features: [
@@ -39,7 +39,7 @@ export const PLANS: readonly Plan[] = [
   {
     id: "pro",
     name: "Pro",
-    price: "2 199 €",
+    price: "2 490 €",
     target:
       "Pour les entreprises qui veulent un site plus complet, avec plus de possibilités de présentation et de conversion.",
     features: [
@@ -59,7 +59,7 @@ export const PLANS: readonly Plan[] = [
   {
     id: "expert",
     name: "Expert",
-    price: "2 799 €",
+    price: "3 490 €",
     target:
       "Pour les projets qui demandent une architecture avancée, des fonctionnalités spécifiques ou une approche technique plus poussée.",
     features: [
@@ -77,7 +77,7 @@ export const PLANS: readonly Plan[] = [
 
 export const SHOP_OFFER = {
   name: "Boutique en ligne",
-  price: "1 499 €",
+  price: "1 790 €",
   target:
     "Pour un périmètre e-commerce simple, sous réserve de validation du cahier des charges. Shopify ou WooCommerce selon vos besoins.",
   separate:
@@ -102,8 +102,8 @@ export const SHOP_OFFER = {
 };
 
 export const ADDONS: readonly { label: string; value: string; accent?: boolean }[] = [
-  { label: "Maintenance et suivi technique", value: "à partir de 50 €/mois", accent: true },
-  { label: "Maintenance renforcée ou e-commerce", value: "à partir de 80 €/mois, selon le périmètre", accent: true },
+  { label: "Maintenance et suivi technique", value: "à partir de 60 €/mois", accent: true },
+  { label: "Maintenance renforcée ou e-commerce", value: "à partir de 85 €/mois, selon le périmètre", accent: true },
   { label: "Correction de bug", value: "sur devis, selon la complexité" },
   { label: "Intervention ponctuelle", value: "devis après analyse" },
   { label: "Refonte de site existant", value: "sur devis" },
