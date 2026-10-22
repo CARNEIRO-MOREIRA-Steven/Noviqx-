@@ -1,0 +1,29 @@
+.list {
+  display: grid;
+  gap: 9px;
+}
+
+.list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.93rem;
+  color: #d3d3cb;
+}
+
+.list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 10px;
+  height: 2px;
+  background: var(--lime);
+}
+
+.onLight li {
+  color: #2a2a27;
+}
+
+.onLight li::before {
+  background: var(--ink);
+}

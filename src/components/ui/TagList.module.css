@@ -1,0 +1,19 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font: 400 0.74rem/1 var(--mono);
+  letter-spacing: 0.02em;
+  padding: 7px 11px;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  color: #c9c9c1;
+}
+
+.onLight .tag {
+  border-color: #c5c5bc;
+  color: #3a3a36;
+}

@@ -1,0 +1,54 @@
+.grid {
+  display: grid;
+  gap: 36px;
+}
+
+.title {
+  margin-top: 22px;
+}
+
+.lede {
+  max-width: 60ch;
+  font-size: 1.05rem;
+  color: var(--mute);
+}
+
+.lede + .lede {
+  margin-top: 16px;
+}
+
+.towns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.towns li {
+  padding: 10px 14px;
+  border: 1px solid var(--line-2);
+  border-radius: 99px;
+  font: 400 0.82rem/1 var(--mono);
+  color: #d0d0c8;
+}
+
+/* Secteur actuel : Chauny et Beautor */
+.towns li:nth-child(-n + 2) {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.rule {
+  max-width: 60ch;
+  margin-top: 22px;
+  font: 400 0.8rem/1.6 var(--mono);
+  color: var(--dim);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+}

@@ -1,0 +1,11 @@
+.eyebrow {
+  font: 500 0.74rem/1 var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.dot {
+  color: var(--lime);
+  margin-right: 0.8em;
+}

@@ -1,0 +1,50 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.chip {
+  min-height: 44px;
+  padding: 11px 16px;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--mute);
+  font: 500 0.8rem/1 var(--mono);
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.chip:hover {
+  color: var(--paper);
+  border-color: var(--paper);
+}
+
+.chip[aria-pressed="true"] {
+  border-color: var(--lime);
+  background: var(--lime);
+  color: var(--on-lime);
+}
+
+.works {
+  display: grid;
+  gap: clamp(40px, 6vw, 72px);
+}
+
+/* Filtrage : les cartes portent data-category (voir ProjectCard) */
+.works[data-filter="vitrine"] > :not([data-category="vitrine"]),
+.works[data-filter="ecommerce"] > :not([data-category="ecommerce"]),
+.works[data-filter="reservation"] > :not([data-category="reservation"]) {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .works {
+    gap: 96px;
+  }
+}

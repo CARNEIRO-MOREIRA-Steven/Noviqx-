@@ -1,0 +1,115 @@
+.form {
+  display: grid;
+  gap: 18px;
+  padding: clamp(20px, 3vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--ink-2);
+  scroll-margin-top: 96px;
+}
+
+.row {
+  display: grid;
+  gap: 18px;
+}
+
+.control {
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 14px;
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font: 400 1rem/1.4 var(--body);
+  transition: border-color 0.2s;
+}
+
+.control:hover {
+  border-color: #5a5a54;
+}
+
+.control:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 1px;
+  border-color: var(--lime);
+}
+
+.control[aria-invalid="true"] {
+  border-color: #ff8a7a;
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Champ piège : hors écran, jamais focalisable */
+.trap {
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.consentWrap {
+  display: grid;
+  gap: 7px;
+}
+
+.consent {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.consent input {
+  width: 22px;
+  height: 22px;
+  margin: 2px 0 0;
+  accent-color: var(--lime);
+}
+
+.consent label {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--mute);
+}
+
+.consent label a {
+  color: var(--paper);
+}
+
+.consentError {
+  font-size: 0.82rem;
+  color: var(--danger);
+}
+
+.consentError:empty {
+  display: none;
+}
+
+.status {
+  padding: 14px 16px;
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+
+.ok {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.ko {
+  border-color: #ff8a7a;
+  color: #ffb3a8;
+}
+
+@media (min-width: 700px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}

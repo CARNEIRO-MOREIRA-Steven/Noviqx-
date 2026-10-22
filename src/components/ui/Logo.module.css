@@ -1,0 +1,43 @@
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.image {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+
+.mark {
+  font: 800 1.45rem/1 var(--display);
+  letter-spacing: -0.04em;
+}
+
+.x {
+  color: var(--lime);
+}
+
+.sub {
+  display: none;
+  font: 400 0.68rem/1 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+@media (min-width: 900px) {
+  .sub {
+    display: block;
+  }
+}

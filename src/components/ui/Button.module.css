@@ -1,0 +1,68 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font: 600 0.95rem/1 var(--body);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.sm {
+  min-height: 42px;
+  padding: 0 18px;
+  font-size: 0.88rem;
+}
+
+.primary {
+  background: var(--lime);
+  color: var(--on-lime);
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+  background: #d6ff6b;
+}
+
+.ghost {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--line-2);
+}
+
+.ghost:hover {
+  border-color: var(--paper);
+}
+
+/* Bouton sombre sur surface claire */
+.inverse.primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.inverse.primary:hover {
+  background: #2a2a27;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+  transform: none;
+}
+
+.arrow {
+  transition: transform 0.2s;
+}
+
+.btn:hover .arrow {
+  transform: translateX(3px);
+}

@@ -1,0 +1,238 @@
+.wrap {
+  min-width: 0;
+}
+
+.stage {
+  container-type: inline-size;
+  position: relative;
+  aspect-ratio: 5 / 4.5;
+  max-width: 100%;
+}
+
+.stage * {
+  box-sizing: border-box;
+}
+
+.m {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid var(--line-2);
+  border-radius: 1.6cqw;
+  background: var(--ink-2);
+  box-shadow: 0 2.4cqw 5cqw rgba(0, 0, 0, 0.5);
+  font-size: 1.7cqw;
+  line-height: 1.3;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 0.7cqw;
+  padding: 1.2cqw 1.6cqw;
+  border-bottom: 1px solid var(--line);
+  background: var(--ink-3);
+}
+
+.bar i {
+  width: 1.1cqw;
+  height: 1.1cqw;
+  border-radius: 50%;
+  background: var(--line-2);
+}
+
+.bar span {
+  margin-left: 1.4cqw;
+  font: 400 1.35cqw/1 var(--mono);
+  color: var(--dim);
+}
+
+.line {
+  display: block;
+  height: 0.9cqw;
+  margin-bottom: 0.9cqw;
+  border-radius: 1cqw;
+  background: var(--line-2);
+}
+
+.pill {
+  display: inline-block;
+  margin-top: 1.4cqw;
+  padding: 1.1cqw 2cqw;
+  border-radius: 999px;
+  background: var(--lime);
+  color: var(--on-lime);
+  font: 600 1.5cqw/1 var(--body);
+}
+
+.ph {
+  border-radius: 1cqw;
+  background: linear-gradient(150deg, #3a3a36, #1c1c1a 70%);
+}
+
+/* Maquette ordinateur */
+.desk {
+  left: 0;
+  top: 7%;
+  width: 80%;
+  height: 62%;
+}
+
+.deskBody {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.4cqw;
+  padding: 3cqw;
+}
+
+.deskTitle {
+  margin: 0 0 1.6cqw;
+  font: 800 3.6cqw/1 var(--display);
+  letter-spacing: -0.04em;
+}
+
+.deskPhoto {
+  height: 100%;
+  min-height: 15cqw;
+}
+
+/* Maquette boutique */
+.shop {
+  right: 0;
+  top: 0;
+  width: 45%;
+  border-color: #d9d9d2;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.shop .bar {
+  border-color: #d9d9d2;
+  background: #ebebe4;
+}
+
+.shop .bar i {
+  background: #c9c9c0;
+}
+
+.shop .bar span {
+  color: #6b6b64;
+}
+
+.shopGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6cqw;
+  padding: 2cqw;
+}
+
+.prod .ph {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(160deg, #cfcfc6, #9d9d93);
+}
+
+.prod:nth-child(2) .ph {
+  background: linear-gradient(160deg, #2c2c29, #111);
+}
+
+.prod:nth-child(3) .ph {
+  background: linear-gradient(160deg, #d8f98a, #a4d61f);
+}
+
+.prod b {
+  display: block;
+  margin-top: 0.8cqw;
+  font: 600 1.5cqw/1.3 var(--body);
+}
+
+.prod span {
+  font: 500 1.4cqw/1 var(--mono);
+  color: #5c5c55;
+}
+
+/* Maquette mobile */
+.phone {
+  left: 5%;
+  bottom: 0;
+  width: 25%;
+  aspect-ratio: 9 / 17;
+  padding: 1.4cqw;
+  border-width: 0.45cqw;
+  border-radius: 3cqw;
+  background: var(--ink);
+}
+
+.notch {
+  width: 35%;
+  height: 0.9cqw;
+  margin: 0.4cqw auto 1.6cqw;
+  border-radius: 1cqw;
+  background: var(--line-2);
+}
+
+.phoneTitle {
+  margin: 0 0 1.2cqw;
+  font: 800 2.5cqw/1 var(--display);
+  letter-spacing: -0.03em;
+}
+
+.phonePhoto {
+  height: 9cqw;
+  margin: 1.4cqw 0;
+}
+
+/* Interface de réservation */
+.cal {
+  right: 3%;
+  bottom: 3%;
+  width: 47%;
+  padding-bottom: 1.6cqw;
+}
+
+.calHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8cqw 2cqw 1cqw;
+  font: 600 1.6cqw/1 var(--body);
+}
+
+.calHead em {
+  font: 400 1.3cqw/1 var(--mono);
+  font-style: normal;
+  color: var(--dim);
+}
+
+.calGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.7cqw;
+  padding: 0 2cqw;
+}
+
+.calGrid span {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border-radius: 0.8cqw;
+  background: var(--ink-3);
+  font: 400 1.3cqw/1 var(--mono);
+  color: var(--dim);
+}
+
+.calGrid .on {
+  background: rgba(198, 255, 52, 0.16);
+  color: var(--lime);
+}
+
+.calGrid .pick {
+  background: var(--lime);
+  color: var(--on-lime);
+  font-weight: 500;
+}
+
+.note {
+  margin-top: 14px;
+  font: 400 0.72rem/1.4 var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--dim);
+}

@@ -1,0 +1,149 @@
+/* Concept 1 : site vitrine artisan */
+.craft {
+  position: absolute;
+  inset: 0;
+  padding: 7cqw 6cqw;
+  background: linear-gradient(120deg, #1c1c1a 0 55%, #2a2a26 55%);
+}
+
+.craft h4 {
+  max-width: 9ch;
+  margin: 0;
+  font: 800 8cqw/0.95 var(--display);
+  letter-spacing: -0.045em;
+}
+
+.craft u {
+  color: var(--lime);
+  text-decoration: none;
+}
+
+.craftImg {
+  position: absolute;
+  top: 7cqw;
+  right: 6cqw;
+  width: 30cqw;
+  height: 60%;
+  border-radius: 1.6cqw;
+  background: linear-gradient(160deg, #4a4a44, #1b1b19);
+}
+
+.craftRow {
+  position: absolute;
+  left: 6cqw;
+  bottom: 6cqw;
+  display: flex;
+  gap: 2cqw;
+}
+
+.craftRow span {
+  padding: 1.7cqw 3cqw;
+  border-radius: 99px;
+  background: var(--lime);
+  color: var(--on-lime);
+  font: 600 2cqw/1 var(--body);
+}
+
+.craftRow em {
+  padding: 1.7cqw 0;
+  font: 400 2cqw/1 var(--mono);
+  font-style: normal;
+  color: var(--mute);
+}
+
+/* Concept 2 : boutique */
+.shop {
+  position: absolute;
+  inset: 0;
+  padding: 5cqw;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.shopTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4cqw;
+  font: 600 2.2cqw/1 var(--body);
+}
+
+.shopGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4cqw;
+}
+
+.shopGrid div {
+  aspect-ratio: 3 / 4;
+  border-radius: 1.4cqw;
+  background: linear-gradient(160deg, #d3d3ca, #9a9a90);
+}
+
+.shopGrid div:nth-child(2) {
+  background: linear-gradient(160deg, #2b2b28, #0e0e0e);
+}
+
+.shopGrid div:nth-child(3) {
+  background: linear-gradient(160deg, #dcfb92, #9fd11d);
+}
+
+.shopGrid div:nth-child(4) {
+  background: linear-gradient(160deg, #bdbdb3, #76766d);
+}
+
+/* Concept 3 : outil métier */
+.tool {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3cqw;
+  padding: 5cqw;
+  background: var(--ink-3);
+}
+
+.side {
+  display: grid;
+  align-content: start;
+  gap: 1.6cqw;
+}
+
+.side span {
+  height: 4cqw;
+  border-radius: 1cqw;
+  background: var(--ink);
+}
+
+.side span:first-child {
+  background: rgba(198, 255, 52, 0.18);
+  outline: 1px solid var(--lime);
+}
+
+.main {
+  display: grid;
+  align-content: start;
+  gap: 1.6cqw;
+  padding: 3cqw;
+  border-radius: 1.6cqw;
+  background: var(--ink);
+}
+
+.main span {
+  display: block;
+  height: 3.4cqw;
+  border-radius: 0.9cqw;
+  background: var(--ink-3);
+}
+
+.main span:nth-child(2) {
+  width: 80%;
+}
+
+.main span:nth-child(3) {
+  width: 62%;
+}
+
+.main .key {
+  width: 26%;
+  background: var(--lime);
+}
